@@ -61,7 +61,7 @@ class MessageEvent extends Event {
       const master = await this.client.search.user(message, "817238971255488533");
       if(!(master)) console.log("Oh! noooooo.. where r u master!");
       let bot = {}, owner = {}, res;
-      bot.name = this.client.user.username;
+      bot.username = this.client.user.username;
       bot.birthdate = "11/2/2002";
       bot.prefix = this.client.prefix;
       bot.gender = "male";
